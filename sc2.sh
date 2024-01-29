@@ -14,4 +14,6 @@ then
 elif [ $a -gt 30000 ];
 then
 	echo "10% tax"
+else
+	echo "2% tax"
 fi

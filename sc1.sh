@@ -4,16 +4,18 @@
 #
 duname="admin"
 dpasswd="testyantra123"
+d1="Developer"
+p1="Fireflink@123" 
 echo "enter username"
 read u
 echo "enter password"
 read p
-until [ $duname == $u ] && [ $dpasswd == $p ];
-do
-	echo "unsuccessful"
-	echo "enter valid username"
-	read u
-	echo "enter valid [password"
-	read p
-done
-echo "authentication successful"
+if [ $duname == $u ] && [ $dpasswd == $p ];
+then
+	echo "successfully"
+elif [ $d1 ==  $u ] && [ $p1 == $p ];
+then 
+	echo "successfully"
+else
+	echo "invalid credentials"
+fi
